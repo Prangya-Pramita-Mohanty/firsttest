@@ -15,11 +15,11 @@ jobs:
         id: auth
         uses: google-github-actions/auth@v0
         with:
-             # workload_identity_provider: ${{ secrets.WORKLOAD_IDENTITY_PROVIDER_ID }}
-             service_account: ${{ secrets.SERVICE_ACCOUNT }}
-             credentials_json: ${{ secrets.GCP_CREDENTIALS }}
-             token_format: 'access_token'
-             access_token_lifetime: 300s 
+           # workload_identity_provider: ${{ secrets.WORKLOAD_IDENTITY_PROVIDER_ID }}
+           service_account: ${{ secrets.SERVICE_ACCOUNT }}
+           credentials_json: ${{ secrets.GCP_CREDENTIALS }}
+           token_format: 'access_token'
+           access_token_lifetime: 300s 
 
 
       - name: Setup Terraform
